@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Citizen Login | Embassy of the Democratic Republic of the Congo</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-[#f5f7fa] min-h-screen flex items-center justify-center">
+    <div class="w-full max-w-md">
+        <div class="text-center mb-8">
+            <a href="index.html" class="inline-flex items-center gap-4 mb-6">
+                <img src="assets/images/logo.png" alt="Logo du gouvernement RDC" class="h-20 w-auto mx-auto">
+            </a>
+            <h1 class="text-2xl font-bold text-[#0f2a4d]">Citizen Portal</h1>
+            <p class="text-[#4a5568] mt-2">Sign in to access your account</p>
+        </div>
+        
+        <div class="card p-8">
+            <form onsubmit="event.preventDefault(); window.location.href='citizen-dashboard.html'">
+                <div class="mb-6">
+                    <label class="block text-sm font-medium text-[#1a202c] mb-2">Passport Number</label>
+                    <input type="text" class="input-field w-full px-4 py-3" placeholder="Enter your passport number">
+                </div>
+                
+                <div class="mb-6">
+                    <label class="block text-sm font-medium text-[#1a202c] mb-2">Password</label>
+                    <input type="password" class="input-field w-full px-4 py-3" placeholder="Enter your password">
+                </div>
+                
+                <div class="flex items-center justify-between mb-8">
+                    <label class="flex items-center gap-2">
+                        <input type="checkbox" class="w-4 h-4">
+                        <span class="text-sm text-[#4a5568]">Remember me</span>
+                    </label>
+                    <a href="#" class="text-sm text-[#1a4a7a] hover:underline">Forgot password?</a>
+                </div>
+                
+                <button type="submit" class="btn-primary w-full py-3 font-medium">Sign In</button>
+            </form>
+            
+            <div class="text-center mt-6 text-sm text-[#4a5568]">
+                Don't have an account? <a href="#" class="text-[#1a4a7a] hover:underline font-medium">Register</a>
+            </div>
+        </div>
+        
+        <div class="text-center mt-6">
+            <a href="index.html" class="text-sm text-[#4a5568] hover:text-[#0f2a4d]">
+            <i class="fas fa-arrow-left mr-1"></i> Back to Home
+            </a>
+        </div>
+    </div>
+</body>
+</html>

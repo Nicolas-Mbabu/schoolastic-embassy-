@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Documents | Embassy of the DRC</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-[#f5f7fa]">
+    <!-- Top Nav -->
+    <nav class="bg-[#0f2a4d] text-white shadow-sm sticky top-0 z-40">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex items-center justify-between h-14">
+                <a href="index.html" class="flex items-center gap-3">
+                    <img src="assets/images/Coat_of_Arms_Democratic_Republic_of_Congo.png" alt="Coat of Arms" class="h-8 w-auto">
+                    <span class="font-semibold text-sm hidden sm:block">Upload Documents</span>
+                </a>
+                <a href="citizen-dashboard.html" class="text-sm hover:text-gray-300">Back to Dashboard</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="max-w-5xl mx-auto px-4 py-8">
+        <h1 class="text-2xl font-bold text-[#0f2a4d] mb-6">Upload Documents</h1>
+        
+        <div class="card p-8 mb-8">
+            <div class="border-2 border-dashed border-[#e1e5eb] rounded p-12 text-center">
+                <i class="fas fa-cloud-upload-alt text-4xl text-gray-400 mb-4"></i>
+                <h3 class="font-semibold text-[#0f2a4d] mb-2">Drop files here or click to browse</h3>
+                <p class="text-sm text-[#4a5568] mb-4">Supported formats: PDF, JPG, PNG (Max 10MB)</p>
+                <button class="btn-primary px-6 py-2 text-sm">Browse Files</button>
+            </div>
+        </div>
+        
+        <div class="card p-6">
+            <h2 class="font-semibold text-[#0f2a4d] mb-4">Upload History</h2>
+            <table class="w-full text-sm">
+                <thead>
+                    <tr class="border-b border-[#e1e5eb]">
+                        <th class="text-left py-3 text-[#4a5568] font-medium">File Name</th>
+                        <th class="text-left py-3 text-[#4a5568] font-medium">Type</th>
+                        <th class="text-left py-3 text-[#4a5568] font-medium">Size</th>
+                        <th class="text-left py-3 text-[#4a5568] font-medium">Status</th>
+                        <th class="text-left py-3 text-[#4a5568] font-medium">Date</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="border-b border-[#e1e5eb]">
+                        <td class="py-3">passport_photo.jpg</td>
+                        <td class="py-3 text-[#4a5568]">Image</td>
+                        <td class="py-3 text-[#4a5568]">2.4 MB</td>
+                        <td class="py-3"><span class="status-badge status-approved">Verified</span></td>
+                        <td class="py-3 text-[#4a5568]">May 20, 2026</td>
+                    </tr>
+                    <tr class="border-b border-[#e1e5eb]">
+                        <td class="py-3">application_form.pdf</td>
+                        <td class="py-3 text-[#4a5568]">PDF</td>
+                        <td class="py-3 text-[#4a5568]">1.8 MB</td>
+                        <td class="py-3"><span class="status-badge status-pending">Pending</span></td>
+                        <td class="py-3 text-[#4a5568]">May 21, 2026</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

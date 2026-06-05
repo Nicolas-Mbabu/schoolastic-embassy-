@@ -1,0 +1,129 @@
+:root {
+    --official-navy: #0f2a4d;
+    --official-blue: #1a4a7a;
+    --accent-gold: #a88c3e;
+    --bg-light: #f5f7fa;
+    --border-light: #e1e5eb;
+    --text-primary: #1a202c;
+    --text-secondary: #4a5568;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', 'Roboto', 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    color: var(--text-primary);
+    line-height: 1.6;
+    background-color: var(--bg-light);
+}
+
+.bg-navy {
+    background-color: var(--official-navy);
+}
+
+.bg-blue {
+    background-color: var(--official-blue);
+}
+
+.text-navy {
+    color: var(--official-navy);
+}
+
+.text-gold {
+    color: var(--accent-gold);
+}
+
+.border-gold {
+    border-color: var(--accent-gold);
+}
+
+.btn-primary {
+    background-color: var(--official-navy);
+    color: white;
+    border-radius: 4px;
+    transition: background-color 0.2s ease;
+}
+
+.btn-primary:hover {
+    background-color: var(--official-blue);
+}
+
+.btn-secondary {
+    background-color: white;
+    color: var(--official-navy);
+    border: 1px solid var(--border-light);
+    border-radius: 4px;
+    transition: all 0.2s ease;
+}
+
+.btn-secondary:hover {
+    background-color: var(--bg-light);
+    border-color: var(--official-blue);
+}
+
+.card {
+    background-color: white;
+    border: 1px solid var(--border-light);
+    border-radius: 6px;
+}
+
+.input-field {
+    border: 1px solid var(--border-light);
+    border-radius: 4px;
+    transition: border-color 0.2s ease;
+}
+
+.input-field:focus {
+    outline: none;
+    border-color: var(--official-blue);
+    box-shadow: 0 0 0 3px rgba(26, 74, 122, 0.1);
+}
+
+table {
+    border-collapse: collapse;
+}
+
+th, td {
+    border-bottom: 1px solid var(--border-light);
+}
+
+.nav-link {
+    color: rgba(255,255,255,0.9);
+    transition: color 0.2s ease;
+}
+
+.nav-link:hover, .nav-link.active {
+    color: white;
+}
+
+.status-badge {
+    padding: 4px 12px;
+    border-radius: 4px;
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
+.status-pending {
+    background-color: #fef3c7;
+    color: #92400e;
+}
+
+.status-progress {
+    background-color: #dbeafe;
+    color: #1e40af;
+}
+
+.status-approved {
+    background-color: #dcfce7;
+    color: #166534;
+}
+
+.accordion-item {
+    border: 1px solid var(--border-light);
+}
+
+.accordion-item:not(:last-child) {
+    border-bottom: none;
+}

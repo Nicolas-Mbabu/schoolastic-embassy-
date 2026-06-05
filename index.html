@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Embassy of the Democratic Republic of the Congo - Washington, D.C.</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-[#f5f7fa]">
+    <div id="toast-container" class="fixed top-4 right-4 z-50"></div>
+
+    <!-- Top Bar -->
+    <div class="bg-[#0a1a30] text-white text-sm py-2">
+        <div class="max-w-7xl mx-auto px-4 flex flex-wrap items-center justify-between gap-4">
+            <div class="flex items-center gap-6">
+                <span class="flex items-center gap-2">
+                    <i class="fas fa-phone text-xs"></i> +1 (202) 234-2660
+                </span>
+                <span class="flex items-center gap-2">
+                    <i class="fas fa-envelope text-xs"></i> info@embassydrc.org
+                </span>
+            </div>
+            <div class="flex items-center gap-4">
+                <a href="#" class="hover:text-gray-300">English</a>
+                <span class="text-gray-500">|</span>
+                <a href="#" class="hover:text-gray-300">Français</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Navbar -->
+    <nav class="bg-[#0f2a4d] sticky top-0 z-40 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex items-center justify-between h-24">
+                <!-- Logo Section -->
+                <a href="index.html" class="flex items-center gap-4">
+                    <img src="assets/images/logo.png" alt="Logo du gouvernement RDC" class="h-20 w-auto">
+                    <div class="h-16 w-0.5 bg-white mx-2"></div>
+                    <div class="hidden sm:block">
+                        <div class="text-white font-bold uppercase text-lg">AMBASSADE DE LA</div>
+                        <div class="text-white font-bold uppercase">RD. CONGO EN TUNISIE</div>
+                    </div>
+                </a>
+
+                <!-- Desktop Menu -->
+                <div class="hidden lg:flex items-center gap-1">
+                    <a href="index.html" class="nav-link active px-4 py-2">Home</a>
+                    <a href="services.html" class="nav-link px-4 py-2">Consular Services</a>
+                    <a href="procedure.html" class="nav-link px-4 py-2">Procedures</a>
+                    <a href="tracking.html" class="nav-link px-4 py-2">Track Application</a>
+                    <a href="faq.html" class="nav-link px-4 py-2">FAQ</a>
+                    <a href="contact.html" class="nav-link px-4 py-2">Contact</a>
+                    <a href="login.html" class="ml-4 btn-primary px-5 py-2 text-sm font-medium">Citizen Login</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="lg:hidden text-white text-xl">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="lg:hidden bg-[#0a1a30] border-t border-gray-700 hidden">
+            <div class="px-4 py-4 space-y-2">
+                <a href="index.html" class="block text-white py-2 border-b border-gray-700">Home</a>
+                <a href="services.html" class="block text-white py-2 border-b border-gray-700">Consular Services</a>
+                <a href="procedure.html" class="block text-white py-2 border-b border-gray-700">Procedures</a>
+                <a href="tracking.html" class="block text-white py-2 border-b border-gray-700">Track Application</a>
+                <a href="faq.html" class="block text-white py-2 border-b border-gray-700">FAQ</a>
+                <a href="contact.html" class="block text-white py-2 border-b border-gray-700">Contact</a>
+                <a href="login.html" class="block mt-4 btn-primary text-center px-5 py-3 font-medium">Citizen Login</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Banner -->
+    <section class="relative h-[80vh] overflow-hidden">
+        <img src="assets/images/congo_embassy.jpg" alt="Embassy Building" class="w-full h-full object-cover">
+        <div class="absolute inset-0 bg-gradient-to-r from-[#0f2a4d]/70 to-[#0f2a4d]/30"></div>
+        <div class="absolute inset-0 flex items-center">
+            <div class="max-w-7xl mx-auto px-4 w-full">
+                <h1 class="text-3xl lg:text-5xl font-bold text-white mb-4">Official Consular Services Portal</h1>
+                <p class="text-lg lg:text-xl text-white/90 mb-8 max-w-2xl">Access consular services, book appointments, and track your applications securely online.</p>
+                <div class="flex flex-wrap gap-4">
+                    <a href="appointment.html" class="bg-white text-[#0f2a4d] px-6 py-3 font-medium rounded hover:bg-gray-100 transition">Book Appointment</a>
+                    <a href="services.html" class="border border-white text-white px-6 py-3 font-medium rounded hover:bg-white/10 transition">View All Services</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Stats -->
+    <section class="py-10">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="card p-6">
+                    <div class="text-3xl font-bold text-[#0f2a4d] mb-1">15,420</div>
+                    <div class="text-sm text-[#4a5568]">Citizens Served</div>
+                </div>
+                <div class="card p-6">
+                    <div class="text-3xl font-bold text-[#0f2a4d] mb-1">8,934</div>
+                    <div class="text-sm text-[#4a5568]">Applications Processed</div>
+                </div>
+                <div class="card p-6">
+                    <div class="text-3xl font-bold text-[#0f2a4d] mb-1">3,256</div>
+                    <div class="text-sm text-[#4a5568]">Appointments Booked</div>
+                </div>
+                <div class="card p-6">
+                    <div class="text-3xl font-bold text-[#0f2a4d] mb-1">98%</div>
+                    <div class="text-sm text-[#4a5568]">Satisfaction Rate</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Overview -->
+    <section class="py-12 bg-white border-t border-b border-[#e1e5eb]">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-2xl font-bold text-[#0f2a4d] mb-8">Consular Services</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <a href="procedure.html" class="card p-6 hover:border-[#1a4a7a] transition">
+                    <div class="flex items-start gap-4">
+                        <i class="fas fa-passport text-2xl text-[#0f2a4d] mt-1"></i>
+                        <div>
+                            <h3 class="font-semibold text-[#0f2a4d] mb-2">Passport Services</h3>
+                            <p class="text-sm text-[#4a5568]">Application, renewal, and replacement of Congolese passports.</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="procedure.html" class="card p-6 hover:border-[#1a4a7a] transition">
+                    <div class="flex items-start gap-4">
+                        <i class="fas fa-id-card text-2xl text-[#0f2a4d] mt-1"></i>
+                        <div>
+                            <h3 class="font-semibold text-[#0f2a4d] mb-2">Visa Applications</h3>
+                            <p class="text-sm text-[#4a5568]">Tourist, business, and diplomatic visa processing.</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="procedure.html" class="card p-6 hover:border-[#1a4a7a] transition">
+                    <div class="flex items-start gap-4">
+                        <i class="fas fa-file-contract text-2xl text-[#0f2a4d] mt-1"></i>
+                        <div>
+                            <h3 class="font-semibold text-[#0f2a4d] mb-2">Document Legalization</h3>
+                            <p class="text-sm text-[#4a5568]">Authentication and legalization of official documents.</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="procedure.html" class="card p-6 hover:border-[#1a4a7a] transition">
+                    <div class="flex items-start gap-4">
+                        <i class="fas fa-user-tie text-2xl text-[#0f2a4d] mt-1"></i>
+                        <div>
+                            <h3 class="font-semibold text-[#0f2a4d] mb-2">Civil Status</h3>
+                            <p class="text-sm text-[#4a5568]">Birth, marriage, and death certificate services.</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="procedure.html" class="card p-6 hover:border-[#1a4a7a] transition">
+                    <div class="flex items-start gap-4">
+                        <i class="fas fa-ambulance text-2xl text-[#0f2a4d] mt-1"></i>
+                        <div>
+                            <h3 class="font-semibold text-[#0f2a4d] mb-2">Emergency Services</h3>
+                            <p class="text-sm text-[#4a5568]">Assistance for urgent and emergency situations.</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="procedure.html" class="card p-6 hover:border-[#1a4a7a] transition">
+                    <div class="flex items-start gap-4">
+                        <i class="fas fa-landmark text-2xl text-[#0f2a4d] mt-1"></i>
+                        <div>
+                            <h3 class="font-semibold text-[#0f2a4d] mb-2">Notary Services</h3>
+                            <p class="text-sm text-[#4a5568]">Notarization and certification of documents.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Announcements -->
+    <section class="py-12">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex items-center justify-between mb-6">
+                <h2 class="text-2xl font-bold text-[#0f2a4d]">Important Announcements</h2>
+                <a href="#" class="text-[#1a4a7a] hover:underline text-sm font-medium">View All</a>
+            </div>
+            <div class="space-y-4">
+                <div class="card p-5">
+                    <div class="flex items-start justify-between">
+                        <div>
+                            <h3 class="font-semibold text-[#0f2a4d] mb-1">Temporary Closure - July 1, 2026</h3>
+                            <p class="text-sm text-[#4a5568]">The embassy will be closed on July 1st for the National Day holiday.</p>
+                        </div>
+                        <span class="text-xs text-[#4a5568] whitespace-nowrap ml-4">May 20, 2026</span>
+                    </div>
+                </div>
+                <div class="card p-5">
+                    <div class="flex items-start justify-between">
+                        <div>
+                            <h3 class="font-semibold text-[#0f2a4d] mb-1">New Online Appointment System</h3>
+                            <p class="text-sm text-[#4a5568]">All consular visits now require prior appointment through our online portal.</p>
+                        </div>
+                        <span class="text-xs text-[#4a5568] whitespace-nowrap ml-4">May 15, 2026</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Preview -->
+    <section class="py-12 bg-white border-t border-b border-[#e1e5eb]">
+        <div class="max-w-4xl mx-auto px-4">
+            <h2 class="text-2xl font-bold text-[#0f2a4d] mb-8 text-center">Frequently Asked Questions</h2>
+            <div class="space-y-0">
+                <div class="accordion-item">
+                    <button class="accordion-header w-full text-left px-5 py-4 flex items-center justify-between hover:bg-[#f5f7fa] transition">
+                        <span class="font-medium text-[#0f2a4d]">How long does passport renewal take?</span>
+                        <i class="fas fa-chevron-down text-sm text-[#4a5568] transition"></i>
+                    </button>
+                    <div class="accordion-content px-5 pb-4 bg-white hidden">
+                        <p class="text-[#4a5568] text-sm">Standard passport renewal takes approximately 4-6 weeks. An express service is available for urgent cases, reducing processing time to 2 weeks.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header w-full text-left px-5 py-4 flex items-center justify-between hover:bg-[#f5f7fa] transition">
+                        <span class="font-medium text-[#0f2a4d]">Can I track my application online?</span>
+                        <i class="fas fa-chevron-down text-sm text-[#4a5568] transition"></i>
+                    </button>
+                    <div class="accordion-content px-5 pb-4 bg-white hidden">
+                        <p class="text-[#4a5568] text-sm">Yes, you can track your application using your tracking number on our Track Application page.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header w-full text-left px-5 py-4 flex items-center justify-between hover:bg-[#f5f7fa] transition">
+                        <span class="font-medium text-[#0f2a4d]">What documents are required?</span>
+                        <i class="fas fa-chevron-down text-sm text-[#4a5568] transition"></i>
+                    </button>
+                    <div class="accordion-content px-5 pb-4 bg-white hidden">
+                        <p class="text-[#4a5568] text-sm">Required documents vary by service. Please refer to the specific procedure page for detailed document checklists.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-8">
+                <a href="faq.html" class="btn-secondary px-6 py-3 font-medium">View All FAQs</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#0f2a4d] text-white">
+        <div class="max-w-7xl mx-auto px-4 py-12">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center gap-3 mb-6">
+                        <img src="assets/images/logo.png" alt="Logo du gouvernement RDC" class="h-20 w-auto">
+                        <div class="h-16 w-0.5 bg-white mx-2"></div>
+                        <div>
+                            <div class="font-bold uppercase text-lg">AMBASSADE DE LA</div>
+                            <div class="font-bold uppercase">RD. CONGO EN TUNISIE</div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-sm text-gray-300">
+                        <li><a href="services.html" class="hover:text-white">Consular Services</a></li>
+                        <li><a href="appointment.html" class="hover:text-white">Book Appointment</a></li>
+                        <li><a href="tracking.html" class="hover:text-white">Track Application</a></li>
+                        <li><a href="faq.html" class="hover:text-white">FAQ</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Contact</h4>
+                    <ul class="space-y-2 text-sm text-gray-300">
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-map-marker-alt mt-0.5"></i>
+                            1100 16th Street NW<br>Washington, DC 20036
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i class="fas fa-phone"></i>
+                            +1 (202) 234-2660
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i class="fas fa-envelope"></i>
+                            info@embassydrc.org
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Opening Hours</h4>
+                    <ul class="space-y-2 text-sm text-gray-300">
+                        <li>Monday - Friday: 9:00 AM - 5:00 PM</li>
+                        <li>Saturday - Sunday: Closed</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-10 pt-8 text-center text-sm text-gray-400">
+                <p>&copy; 2026 Embassy of the Democratic Republic of the Congo. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+    <script>
+        // Accordion
+        document.querySelectorAll('.accordion-header').forEach(button => {
+            button.addEventListener('click', () => {
+                const content = button.nextElementSibling;
+                const icon = button.querySelector('i');
+                content.classList.toggle('hidden');
+                icon.classList.toggle('rotate-180');
+            });
+        });
+        
+        // Mobile menu
+        document.getElementById('mobile-menu-btn').addEventListener('click', () => {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
