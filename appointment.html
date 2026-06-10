@@ -96,11 +96,11 @@
                 </div>
             </div>
             
-            <div class="card p-8">
+            <form id="appointment-form" class="card p-8">
                 <h2 class="text-xl font-semibold text-[#0f2a4d] mb-6">Step 1: Select Service</h2>
                 <div class="space-y-3 mb-8">
                     <label class="block border border-[#e1e5eb] rounded p-4 cursor-pointer hover:border-[#0f2a4d] transition">
-                        <input type="radio" name="service" class="hidden" checked>
+                        <input type="radio" name="service" value="Passport Renewal" class="hidden" checked required>
                         <div class="flex items-center gap-4">
                             <div class="w-5 h-5 border-2 border-[#0f2a4d] rounded-full flex items-center justify-center">
                                 <div class="w-2.5 h-2.5 bg-[#0f2a4d] rounded-full"></div>
@@ -113,7 +113,7 @@
                     </label>
                     
                     <label class="block border border-[#e1e5eb] rounded p-4 cursor-pointer hover:border-[#0f2a4d] transition">
-                        <input type="radio" name="service" class="hidden">
+                        <input type="radio" name="service" value="Visa Application" class="hidden">
                         <div class="flex items-center gap-4">
                             <div class="w-5 h-5 border-2 border-gray-300 rounded-full flex items-center justify-center"></div>
                             <div>
@@ -124,7 +124,7 @@
                     </label>
                     
                     <label class="block border border-[#e1e5eb] rounded p-4 cursor-pointer hover:border-[#0f2a4d] transition">
-                        <input type="radio" name="service" class="hidden">
+                        <input type="radio" name="service" value="Document Legalization" class="hidden">
                         <div class="flex items-center gap-4">
                             <div class="w-5 h-5 border-2 border-gray-300 rounded-full flex items-center justify-center"></div>
                             <div>
@@ -134,11 +134,43 @@
                         </div>
                     </label>
                 </div>
+
+                <h2 class="text-xl font-semibold text-[#0f2a4d] mb-6">Step 2: Date & Time</h2>
+                <div class="grid md:grid-cols-2 gap-6 mb-8">
+                    <div>
+                        <label class="block text-sm font-medium text-[#1a202c] mb-2">Appointment Date</label>
+                        <input type="date" name="appointmentDate" class="input-field w-full px-4 py-3" required>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-[#1a202c] mb-2">Appointment Time</label>
+                        <input type="time" name="appointmentTime" class="input-field w-full px-4 py-3" required>
+                    </div>
+                </div>
+
+                <h2 class="text-xl font-semibold text-[#0f2a4d] mb-6">Step 3: Details</h2>
+                <div class="grid md:grid-cols-2 gap-6 mb-8">
+                    <div>
+                        <label class="block text-sm font-medium text-[#1a202c] mb-2">First Name</label>
+                        <input type="text" name="firstName" class="input-field w-full px-4 py-3" required>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-[#1a202c] mb-2">Last Name</label>
+                        <input type="text" name="lastName" class="input-field w-full px-4 py-3" required>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-[#1a202c] mb-2">Passport Number</label>
+                        <input type="text" name="passportNumber" class="input-field w-full px-4 py-3" required>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-[#1a202c] mb-2">Email Address</label>
+                        <input type="email" name="email" class="input-field w-full px-4 py-3" required>
+                    </div>
+                </div>
                 
                 <div class="flex justify-end">
-                    <a href="appointment-confirmation.html" class="btn-primary px-8 py-3 font-medium">Continue</a>
+                    <button type="submit" class="btn-primary px-8 py-3 font-medium">Continue</button>
                 </div>
-            </div>
+            </form>
         </div>
     </section>
 
@@ -187,10 +219,6 @@
         </div>
     </footer>
 
-    <script>
-        document.getElementById('mobile-menu-btn').addEventListener('click', () => {
-            document.getElementById('mobile-menu').classList.toggle('hidden');
-        });
-    </script>
+    <script src="js/app.js"></script>
 </body>
 </html>

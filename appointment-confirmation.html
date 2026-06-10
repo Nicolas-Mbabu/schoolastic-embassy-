@@ -74,34 +74,27 @@
             
             <div class="border border-[#e1e5eb] rounded p-6 mb-8">
                 <h2 class="font-semibold text-[#0f2a4d] mb-4">Appointment Details</h2>
-                <div class="space-y-3 text-sm">
-                    <div class="flex justify-between">
-                        <span class="text-[#4a5568]">Appointment ID</span>
-                        <span class="font-medium font-mono">DRC-2026-0523-8847</span>
-                    </div>
-                    <div class="flex justify-between">
-                        <span class="text-[#4a5568]">Service</span>
-                        <span class="font-medium">Passport Renewal</span>
-                    </div>
-                    <div class="flex justify-between">
-                        <span class="text-[#4a5568]">Date</span>
-                        <span class="font-medium">June 15, 2026</span>
-                    </div>
-                    <div class="flex justify-between">
-                        <span class="text-[#4a5568]">Time</span>
-                        <span class="font-medium">10:30 AM</span>
-                    </div>
-                    <div class="flex justify-between">
-                        <span class="text-[#4a5568]">Location</span>
-                        <span class="font-medium">Embassy of the DRC</span>
-                    </div>
-                </div>
+                <div id="appointment-details" class="space-y-3 text-sm"></div>
             </div>
             
             <div class="flex flex-col sm:flex-row gap-4">
-                <a href="#" class="btn-primary flex-1 text-center py-3 font-medium">Download Receipt</a>
+                <button type="button" data-modal="email-preview-modal" class="btn-primary flex-1 text-center py-3 font-medium">View Confirmation Email</button>
                 <a href="index.html" class="btn-secondary flex-1 text-center py-3 font-medium">Back to Home</a>
             </div>
+        </div>
+    </div>
+
+    <div id="email-preview-modal" class="modal hidden fixed inset-0 bg-black/50 z-50 flex items-center justify-center px-4">
+        <div class="bg-white rounded max-w-2xl w-full p-6">
+            <div class="flex items-center justify-between mb-4">
+                <h2 class="font-semibold text-[#0f2a4d]">Confirmation Email</h2>
+                <button type="button" data-modal-close class="text-[#4a5568]"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="border border-[#e1e5eb] rounded p-4 mb-4">
+                <div class="text-sm text-[#4a5568] mb-2">Objet</div>
+                <div id="email-preview-subject" class="font-medium text-[#0f2a4d]"></div>
+            </div>
+            <pre id="email-preview-body" class="border border-[#e1e5eb] rounded p-4 text-sm whitespace-pre-wrap font-sans text-[#1a202c]"></pre>
         </div>
     </div>
 
@@ -150,10 +143,6 @@
         </div>
     </footer>
 
-    <script>
-        document.getElementById('mobile-menu-btn').addEventListener('click', () => {
-            document.getElementById('mobile-menu').classList.toggle('hidden');
-        });
-    </script>
+    <script src="js/app.js"></script>
 </body>
 </html>

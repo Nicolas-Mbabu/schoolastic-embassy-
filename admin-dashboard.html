@@ -19,10 +19,6 @@
                     <span class="font-semibold text-sm hidden sm:block">Admin Dashboard</span>
                 </a>
                 <div class="flex items-center gap-4">
-                    <button class="relative">
-                        <i class="fas fa-bell"></i>
-                        <span class="absolute -top-1 -right-1 w-4 h-4 bg-red-600 rounded-full text-xs flex items-center justify-center">5</span>
-                    </button>
                     <div class="flex items-center gap-3">
                         <div class="w-8 h-8 bg-[#1a4a7a] rounded-full flex items-center justify-center text-sm font-bold">AD</div>
                         <span class="hidden md:block text-sm">Admin User</span>
@@ -78,33 +74,12 @@
                         <th class="text-left py-3 text-[#4a5568] font-medium">Date</th>
                     </tr>
                 </thead>
-                <tbody>
-                    <tr class="border-b border-[#e1e5eb]">
-                        <td class="py-3 font-mono text-[#4a5568]">DRC-2026-0523-001</td>
-                        <td class="py-3">Jean Mabika</td>
-                        <td class="py-3">Passport Renewal</td>
-                        <td class="py-3"><span class="status-badge status-progress">In Progress</span></td>
-                        <td class="py-3 text-[#4a5568]">May 23, 2026</td>
-                    </tr>
-                    <tr class="border-b border-[#e1e5eb]">
-                        <td class="py-3 font-mono text-[#4a5568]">DRC-2026-0523-002</td>
-                        <td class="py-3">Marie Kabasele</td>
-                        <td class="py-3">Visa Application</td>
-                        <td class="py-3"><span class="status-badge status-approved">Approved</span></td>
-                        <td class="py-3 text-[#4a5568]">May 22, 2026</td>
-                    </tr>
-                    <tr class="border-b border-[#e1e5eb]">
-                        <td class="py-3 font-mono text-[#4a5568]">DRC-2026-0523-003</td>
-                        <td class="py-3">Pierre Lusala</td>
-                        <td class="py-3">Legalization</td>
-                        <td class="py-3"><span class="status-badge status-pending">Pending</span></td>
-                        <td class="py-3 text-[#4a5568]">May 21, 2026</td>
-                    </tr>
-                </tbody>
+                <tbody id="admin-recent-cases"></tbody>
             </table>
         </div>
     </div>
     
+    <script src="js/app.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             // Applications Chart

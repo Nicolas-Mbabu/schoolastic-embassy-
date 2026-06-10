@@ -71,78 +71,7 @@
 
     <!-- Main Content -->
     <section class="py-12">
-        <div class="max-w-4xl mx-auto px-4">
-            <div class="card p-6 mb-8">
-                <div class="flex items-center justify-between mb-6">
-                    <div>
-                        <h1 class="text-2xl font-bold text-[#0f2a4d]">Application Status</h1>
-                        <p class="text-[#4a5568]">Tracking ID: DRC-2026-0523-8847</p>
-                    </div>
-                    <span class="status-badge status-progress">In Progress</span>
-                </div>
-                
-                <div class="grid md:grid-cols-2 gap-6 mb-8">
-                    <div>
-                        <h3 class="font-medium text-[#0f2a4d] mb-2">Case Details</h3>
-                        <div class="space-y-2 text-sm">
-                            <div class="flex justify-between">
-                                <span class="text-[#4a5568]">Applicant</span>
-                                <span class="font-medium">Jean Mabika</span>
-                            </div>
-                            <div class="flex justify-between">
-                                <span class="text-[#4a5568]">Service</span>
-                                <span class="font-medium">Passport Renewal</span>
-                            </div>
-                            <div class="flex justify-between">
-                                <span class="text-[#4a5568]">Submission Date</span>
-                                <span class="font-medium">May 20, 2026</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <h3 class="font-medium text-[#0f2a4d] mb-2">Processing Information</h3>
-                        <div class="space-y-2 text-sm">
-                            <div class="flex justify-between">
-                                <span class="text-[#4a5568]">Assigned Department</span>
-                                <span class="font-medium">Consular Services</span>
-                            </div>
-                            <div class="flex justify-between">
-                                <span class="text-[#4a5568]">Estimated Completion</span>
-                                <span class="font-medium">June 15, 2026</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <h3 class="font-medium text-[#0f2a4d] mb-6">Progress Timeline</h3>
-                <ol class="relative border-l border-[#e1e5eb] ml-3 space-y-8">
-                    <li class="ml-6">
-                        <div class="absolute -left-[9px] top-0 w-4 h-4 bg-green-600 rounded-full"></div>
-                        <h4 class="font-medium text-[#0f2a4d]">Application Submitted</h4>
-                        <p class="text-sm text-[#4a5568]">May 20, 2026 - 09:15 AM</p>
-                    </li>
-                    <li class="ml-6">
-                        <div class="absolute -left-[9px] top-0 w-4 h-4 bg-green-600 rounded-full"></div>
-                        <h4 class="font-medium text-[#0f2a4d]">Documents Verified</h4>
-                        <p class="text-sm text-[#4a5568]">May 21, 2026 - 02:30 PM</p>
-                    </li>
-                    <li class="ml-6">
-                        <div class="absolute -left-[9px] top-0 w-4 h-4 bg-[#0f2a4d] rounded-full"></div>
-                        <h4 class="font-medium text-[#0f2a4d]">Processing</h4>
-                        <p class="text-sm text-[#4a5568]">May 22, 2026 - 10:00 AM</p>
-                    </li>
-                    <li class="ml-6">
-                        <div class="absolute -left-[9px] top-0 w-4 h-4 bg-gray-300 rounded-full"></div>
-                        <h4 class="font-medium text-gray-500">Ready for Pickup</h4>
-                        <p class="text-sm text-gray-400">Pending</p>
-                    </li>
-                </ol>
-            </div>
-            
-            <div class="flex justify-between">
-                <a href="tracking.html" class="btn-secondary px-6 py-3 font-medium">New Search</a>
-            </div>
-        </div>
+        <div id="tracking-result-content" class="max-w-4xl mx-auto px-4"></div>
     </section>
 
     <!-- Footer -->
@@ -185,10 +114,6 @@
         </div>
     </footer>
 
-    <script>
-        document.getElementById('mobile-menu-btn').addEventListener('click', () => {
-            document.getElementById('mobile-menu').classList.toggle('hidden');
-        });
-    </script>
+    <script src="js/app.js"></script>
 </body>
 </html>

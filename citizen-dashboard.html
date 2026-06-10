@@ -18,13 +18,9 @@
                     <span class="font-semibold text-sm hidden sm:block">Citizen Portal</span>
                 </a>
                 <div class="flex items-center gap-4">
-                    <button class="relative">
-                        <i class="fas fa-bell"></i>
-                        <span class="absolute -top-1 -right-1 w-4 h-4 bg-red-600 rounded-full text-xs flex items-center justify-center">3</span>
-                    </button>
                     <div class="flex items-center gap-3">
                         <div class="w-8 h-8 bg-[#1a4a7a] rounded-full flex items-center justify-center text-sm font-bold">JM</div>
-                        <span class="hidden md:block text-sm">Jean Mabika</span>
+                        <span class="hidden md:block text-sm">Citizen User</span>
                     </div>
                 </div>
             </div>
@@ -32,97 +28,8 @@
     </nav>
 
     <!-- Dashboard Content -->
-    <div class="max-w-7xl mx-auto px-4 py-8">
-        <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
-            <div class="card p-5">
-                <div class="text-2xl font-bold text-[#0f2a4d] mb-1">2</div>
-                <div class="text-sm text-[#4a5568]">Upcoming Appointments</div>
-            </div>
-            <div class="card p-5">
-                <div class="text-2xl font-bold text-[#0f2a4d] mb-1">1</div>
-                <div class="text-sm text-[#4a5568]">Active Applications</div>
-            </div>
-            <div class="card p-5">
-                <div class="text-2xl font-bold text-[#0f2a4d] mb-1">5</div>
-                <div class="text-sm text-[#4a5568]">Uploaded Documents</div>
-            </div>
-            <div class="card p-5">
-                <div class="text-2xl font-bold text-[#0f2a4d] mb-1">8</div>
-                <div class="text-sm text-[#4a5568]">Completed Requests</div>
-            </div>
-        </div>
-        
-        <div class="grid lg:grid-cols-3 gap-8">
-            <div class="lg:col-span-2 space-y-8">
-                <div class="card p-6">
-                    <h2 class="font-semibold text-[#0f2a4d] mb-4">Upcoming Appointments</h2>
-                    <table class="w-full text-sm">
-                        <thead>
-                            <tr class="border-b border-[#e1e5eb]">
-                                <th class="text-left py-3 text-[#4a5568] font-medium">Date</th>
-                                <th class="text-left py-3 text-[#4a5568] font-medium">Service</th>
-                                <th class="text-left py-3 text-[#4a5568] font-medium">Time</th>
-                                <th class="text-left py-3 text-[#4a5568] font-medium">Status</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr class="border-b border-[#e1e5eb]">
-                                <td class="py-3">June 15, 2026</td>
-                                <td class="py-3">Passport Renewal</td>
-                                <td class="py-3">10:30 AM</td>
-                                <td class="py-3"><span class="status-badge status-approved">Confirmed</span></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                
-                <div class="card p-6">
-                    <h2 class="font-semibold text-[#0f2a4d] mb-4">Recent Activity</h2>
-                    <div class="space-y-4">
-                        <div class="flex items-center gap-3 text-sm">
-                            <div class="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center text-green-600"><i class="fas fa-check"></i></div>
-                            <div>
-                                <div class="font-medium text-[#0f2a4d]">Documents verified</div>
-                                <div class="text-[#4a5568]">May 22, 2026</div>
-                            </div>
-                        </div>
-                        <div class="flex items-center gap-3 text-sm">
-                            <div class="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center text-blue-600"><i class="fas fa-calendar"></i></div>
-                            <div>
-                                <div class="font-medium text-[#0f2a4d]">Appointment booked</div>
-                                <div class="text-[#4a5568]">May 21, 2026</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="space-y-8">
-                <div class="card p-6">
-                    <h2 class="font-semibold text-[#0f2a4d] mb-4">Profile</h2>
-                    <div class="text-center mb-4">
-                        <div class="w-16 h-16 bg-[#1a4a7a] rounded-full flex items-center justify-center text-2xl font-bold text-white mx-auto mb-3">JM</div>
-                        <div class="font-medium text-[#0f2a4d]">Jean Mabika</div>
-                        <div class="text-sm text-[#4a5568]">jean.mabika@email.com</div>
-                    </div>
-                </div>
-                
-                <div class="card p-6">
-                    <h2 class="font-semibold text-[#0f2a4d] mb-4">Quick Actions</h2>
-                    <div class="space-y-3">
-                        <a href="appointment.html" class="block border border-[#e1e5eb] rounded p-3 hover:border-[#0f2a4d] transition text-sm">
-                            <i class="fas fa-calendar-plus mr-2 text-[#0f2a4d]"></i> Book Appointment
-                        </a>
-                        <a href="upload-documents.html" class="block border border-[#e1e5eb] rounded p-3 hover:border-[#0f2a4d] transition text-sm">
-                            <i class="fas fa-cloud-upload-alt mr-2 text-[#0f2a4d]"></i> Upload Documents
-                        </a>
-                        <a href="tracking.html" class="block border border-[#e1e5eb] rounded p-3 hover:border-[#0f2a4d] transition text-sm">
-                            <i class="fas fa-search mr-2 text-[#0f2a4d]"></i> Track Application
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <div id="citizen-dashboard-content" class="max-w-7xl mx-auto px-4 py-8">
     </div>
+    <script src="js/app.js"></script>
 </body>
 </html>

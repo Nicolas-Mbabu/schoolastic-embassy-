@@ -30,7 +30,7 @@
                 <i class="fas fa-cloud-upload-alt text-4xl text-gray-400 mb-4"></i>
                 <h3 class="font-semibold text-[#0f2a4d] mb-2">Drop files here or click to browse</h3>
                 <p class="text-sm text-[#4a5568] mb-4">Supported formats: PDF, JPG, PNG (Max 10MB)</p>
-                <button class="btn-primary px-6 py-2 text-sm">Browse Files</button>
+                <button id="mock-upload-button" type="button" class="btn-primary px-6 py-2 text-sm">Browse Files</button>
             </div>
         </div>
         
@@ -46,24 +46,10 @@
                         <th class="text-left py-3 text-[#4a5568] font-medium">Date</th>
                     </tr>
                 </thead>
-                <tbody>
-                    <tr class="border-b border-[#e1e5eb]">
-                        <td class="py-3">passport_photo.jpg</td>
-                        <td class="py-3 text-[#4a5568]">Image</td>
-                        <td class="py-3 text-[#4a5568]">2.4 MB</td>
-                        <td class="py-3"><span class="status-badge status-approved">Verified</span></td>
-                        <td class="py-3 text-[#4a5568]">May 20, 2026</td>
-                    </tr>
-                    <tr class="border-b border-[#e1e5eb]">
-                        <td class="py-3">application_form.pdf</td>
-                        <td class="py-3 text-[#4a5568]">PDF</td>
-                        <td class="py-3 text-[#4a5568]">1.8 MB</td>
-                        <td class="py-3"><span class="status-badge status-pending">Pending</span></td>
-                        <td class="py-3 text-[#4a5568]">May 21, 2026</td>
-                    </tr>
-                </tbody>
+                <tbody id="upload-history-body"></tbody>
             </table>
         </div>
     </div>
+    <script src="js/app.js"></script>
 </body>
 </html>
